@@ -1,0 +1,13 @@
+[theme]
+base = "dark"
+primaryColor = "#E694FF"
+backgroundColor = "#420171"
+secondaryBackgroundColor = "#310452"
+textColor = "#DCDCDC"
+font = "sans-serif"
+[deprecation]
+showfileUploaderEncoding = false
+[admin]
+username = "admin"
+password = "Foxway2023"
+
