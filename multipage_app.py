@@ -1,6 +1,5 @@
-
 import streamlit as st
-from pages import neuf_remanufacture, refurb, premium, administrator
+from .pages import neuf_remanufacture, refurb, premium, administrator
 
 st.set_page_config(
     page_title="Price List",
