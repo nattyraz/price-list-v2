@@ -1,10 +1,14 @@
-
+st.set_page_config(
+    page_title="Remanufactured Stocklist",
+    page_icon="favicon.ico",
+    layout="wide"
+)
 import streamlit as st
-from pages import neuf_remanufacture, refurb, premium
+from pages import neuf_remanufacture, refurb, premium, administrator
 
 # Sidebar navigation for the multipage app
 st.sidebar.title("Navigation")
-selection = st.sidebar.radio("Go to", ["Home", "neuf & remanufacturé", "refurb", "Premium"])
+selection = st.sidebar.radio("Go to", ["Home", "neuf & remanufacturé", "refurb", "Premium", "Administrator"])
 
 if selection == "Home":
     st.title("Home")
@@ -15,3 +19,5 @@ elif selection == "refurb":
     refurb.app()
 elif selection == "Premium":
     premium.app()
+elif selection == "Administrator":
+    administrator.app()
